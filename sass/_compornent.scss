@@ -1,0 +1,30 @@
+.btn-show-modal {
+  padding: 1.5rem 2rem;
+  background: $color-primary;
+  border-radius: 20rem;
+}
+
+.btn--text {
+  border-style: none;
+  color: $color-primary;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border-bottom: solid 1px;
+  padding-bottom: .5rem;
+}
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+  &__self {
+    width: 3rem;
+    height: 3rem;
+  }
+}

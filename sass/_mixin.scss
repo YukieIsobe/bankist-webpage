@@ -1,0 +1,22 @@
+/*
+phone: 600px
+tab-port: 900px
+desktop: 1200px
+
+1em = 16px
+37.5em = 600px  (600/16)
+56.25em = 900px
+75em = 1200px
+*/
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content };
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 56.25em) { @content };
+  }
+}
+
+

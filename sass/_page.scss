@@ -1,0 +1,22 @@
+.section {
+  padding: 8rem 10rem 15rem 10rem;
+  border-bottom: solid 1px rgb(218, 218, 218);
+  transition: all 1s;
+
+  @include respond(tablet) {
+    padding: 8rem 3rem 15rem 3rem;
+   }
+   @include respond(phone) {
+    padding: 6rem 2rem 13rem 2rem;
+   }
+}
+
+.hidden {
+  display: none;
+  // visibility: hidden;
+}
+
+.fadein {
+  transform: translateY(10rem);
+  opacity: 0;
+}

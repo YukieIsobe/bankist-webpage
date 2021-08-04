@@ -1,0 +1,67 @@
+.heading--1 {
+  font-size: 5rem;
+  line-height: 1.4;
+
+  @include respond(phone) {
+    line-height: 1.2;
+  }
+}
+.highlight {
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: $gradient-primary;
+    opacity: 0.8;
+    transform: scale(1.1) skew(-8deg);
+  }
+}
+
+.heading--4 {
+  font-size: 2.5rem;
+}
+
+.section__title {
+  padding: 7rem 10rem;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    padding: 5rem;
+  }
+  @include respond(phone) {
+    padding: 2rem 2rem 5rem 2rem;
+  }
+}
+
+.heading--2 {
+  color: $color-primary;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.heading--3 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.heading--5 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+
+.heading--6 {
+  font-size: 1.8rem;
+}
+

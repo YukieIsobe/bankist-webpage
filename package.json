@@ -1,0 +1,22 @@
+{
+  "name": "bankist-website",
+  "version": "1.0.0",
+  "description": "demo bank website",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --no-minify index.html"
+  },
+  "author": "yukie",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-rc.0",
+    "parcel-plugin-data-src": "^1.0.1",
+    "parcel-plugin-lazyload-lozad": "0.0.1"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}

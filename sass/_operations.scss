@@ -1,0 +1,94 @@
+.tab-box {
+  display: flex;
+  justify-content: center;
+  transform: translateY(50%);
+}
+.tab__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 3.5rem;
+  border-radius: 15rem;
+  border-style: none;
+  cursor: pointer;
+  transition: all .5s;
+  @include respond(phone) {
+    padding: 1.5rem 2.5rem;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+
+    @include respond(phone) {
+      margin-right: 1.5rem;
+    }
+  }
+  &--yellow {
+    background: $color-secondary;
+    &:hover {
+      background: $color-secondary-darker;
+    }
+  }
+  &--green {
+    background: $color-primary;
+    &:hover {
+      background: $color-primary-darker;
+    }
+  }
+  &--red {
+    background: $color-tertiary;
+    &:hover {
+      background: $color-tertiary-darker;
+    }
+  }
+
+  &--active {
+    transform: translateY(-20%);
+  }
+}
+
+.tab__content {
+  display: none;
+  p {
+    font-size: 1.6rem;
+    grid-column: 2;
+
+    @include respond(phone) {
+      grid-column: 1;
+     }
+  }
+}
+.content--active {
+  background: white;
+  padding: 7rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  align-items: center;
+  column-gap: 2rem;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    padding: 6rem 4rem 4rem 4rem;
+   }
+   @include respond(phone) {
+    grid-template-columns: 1fr;
+   }
+}
+
+.icon--yellow {
+  background: $color-secondary-opacity;
+}
+.icon__self--yellow {
+  fill: $color-secondary;
+}
+.icon--green {
+  background: $color-primary-opacity;
+}
+.icon__self--green {
+  fill: $color-primary;
+}
+.icon--red {
+  background: $color-tertiary-opacity;
+}
+.icon__self--red {
+  fill: $color-tertiary;
+}

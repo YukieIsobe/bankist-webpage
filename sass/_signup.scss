@@ -1,0 +1,18 @@
+.section--sign-up {
+  background: #37383d;
+  text-align: center;
+
+  &-title {
+    color: white;
+    font-size: 3.3rem;
+    padding-bottom: 6rem;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  &-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
